@@ -23,3 +23,17 @@ def get_question_by_answer(answer):
     data = get_data()
     question = data.loc[data['answer'] == answer, 'question'].values[0]
     return question
+
+def get_question_by_id(id):
+    data = get_data()
+    question = data.loc[data['id'] == id, 'question'].values[0]
+    return question
+
+def get_answer_by_id(id):
+    data = get_data()
+    answer = data.loc[data['id'] == id, 'answer'].values[0]
+    return answer
+
+def get_id_by_question(question):
+    data = get_data()
+    
